@@ -1,3 +1,5 @@
 body{
-    background-image: url(../resources/image/pexels-ash-craig-122861-376464.jpg);
+    background-image: url(../resources/image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
