@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/resources/icon/weather-code/cloudy.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/resources/icon/">
 </head>
 
 <body class="h-[100vh]  p-12">
-    <div class="bg-transparent backdrop-blur-3xl h-208 rounded-3xl p-25 border border-white/20 shadow-inner">
+    <div class="bg-transparent backdrop-blur-lg shadow-2xl h-208 rounded-3xl p-25 border border-white/30 shadow-inner">
         <div class="flex gap-15">
-            <div class="bg-transparent w-250 h-100 rounded-3xl border border-white/20 p-7 shadow-inner">
+            <div
+                class="bg-transparent w-250 h-100 rounded-3xl border border-white/50 backdrop-blur-3xl p-7 shadow-inner shadow-2xl">
                 <div class="flex">
                     <div class="p-3 text-white w-full flex items-center">
                         <div>
@@ -36,19 +38,23 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-150 h-100 rounded-3xl border border-white/20 text-white p-7 shadow-inner">
-                <div class="bg-transparent w-full rounded-3xl h-15 mb-5 border border-white/20 flex shadow-inner">
+            <div
+                class="bg-transparent w-150 h-100 rounded-3xl border border-white/50 text-white p-7 shadow-inner shadow-2xl">
+                <div
+                    class="bg-transparent w-full rounded-3xl h-15 mb-5 border border-white/50 flex shadow-inner shadow-2xl">
                     <input id="user-input" type="text" placeholder="Search City.."
                         class="w-full focus:outline-none focus:ring-0 focus:border-none p-3">
                     <button id="input-submit-btn" class="w-30" type="submit">search</button>
                 </div>
-                <div class="border border-white/20 h-65 rounded-2xl" id="place-suggestion">
+                <div class="border border-white/20 backdrop-blur-3xl h-65 rounded-2xl" id="place-suggestion">
 
                 </div>
             </div>
         </div>
-        <div class="bg-transparent w-full mt-10 h-50 rounded-4xl p-5 flex gap-5 border border-white/20 text-white shadow-inner">
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+        <div
+            class="bg-transparent w-full mt-10 h-50 rounded-4xl p-5 flex gap-5 border border-white/50 text-white shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/day.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -57,7 +63,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/air.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -66,16 +73,18 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
-                    <div><img src="./assets/resources/icon/fixed-icons/moisturizer.png" class="w-15 h-15 flex items-center"
-                            alt=""></div>
+                    <div><img src="./assets/resources/icon/fixed-icons/moisturizer.png"
+                            class="w-15 h-15 flex items-center" alt=""></div>
                     <div>
                         <h2 id="day" class="mt-5">moisture</h2>
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/wawes.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -84,7 +93,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/uv-light.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -93,7 +103,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/wind.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -102,7 +113,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/pressure.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -111,16 +123,18 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
-                    <div><img src="./assets/resources/icon/fixed-icons/visiblity.png" class="w-15 h-15 flex items-center"
-                            alt=""></div>
+                    <div><img src="./assets/resources/icon/fixed-icons/visiblity.png"
+                            class="w-15 h-15 flex items-center" alt=""></div>
                     <div>
                         <h2 id="day" class="mt-5">visiblity</h2>
                     </div>
                 </div>
             </div>
-            <div class="bg-transparent w-full rounded-3xl h-full border border-white/20 p-1 flex items-center justify-center shadow-inner">
+            <div
+                class="bg-transparent w-full rounded-3xl h-full border border-white/50 p-1 flex items-center justify-center shadow-inner shadow-2xl">
                 <div>
                     <div><img src="./assets/resources/icon/fixed-icons/weather.png" class="w-15 h-15 flex items-center"
                             alt=""></div>
@@ -133,7 +147,7 @@
     </div>
 
 
-<script src="./assets/java-script/script.js"></script>    
+    <script src="./assets/java-script/script.js"></script>
 </body>
 
 </html>
